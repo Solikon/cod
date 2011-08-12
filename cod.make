@@ -101,9 +101,6 @@ projects[uuid_features][download][revision] = "6.x-1.x"
 
 
 projects[ubercart][subdir] = contrib
-projects[ubercart][download][type] = "git"
-projects[ubercart][download][branch] = "6.x-2.x"
-projects[ubercart][download][url] = "http://git.drupal.org/project/ubercart.git"
 
 projects[views][subdir] = contrib
 
