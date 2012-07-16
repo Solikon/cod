@@ -90,12 +90,13 @@ projects[uc_node_checkout][subdir] = contrib
 projects[uuid][subdir] = contrib
 projects[uuid][download][type] = "git"
 projects[uuid][download][url] = "http://git.drupal.org/project/uuid.git"
-projects[uuid][download][revision] = "6.x-1.x"
+projects[uuid][download][branch] = "6.x-1.x"
+
 
 projects[uuid_features][subdir] = contrib
 projects[uuid_features][download][type] = "git"
 projects[uuid_features][download][url] = "http://git.drupal.org/project/uuid_features.git"
-projects[uuid_features][download][revision] = "6.x-1.x"
+projects[uuid_features][download][branch] = "6.x-1.x"
 
 
 projects[ubercart][subdir] = contrib
@@ -107,17 +108,18 @@ projects[views_bulk_operations][subdir] = contrib
 projects[views_send][subdir] = contrib
 
 projects[fusion_swimmingly][type] = theme
+projects[fusion_swimmingly][download][type] = git
+projects[fusion_swimmingly][download][url] = "http://git.drupal.org/project/fusion_swimmingly.git"
+projects[fusion_swimmingly][download][branch] = "6.x-1.x"
 
 projects[fusion][type] = theme
-projects[fusion][download][type] = git
-projects[fusion][download][url] = "http://git.drupal.org/project/fusion.git"
-projects[fusion][download][revision] = "6.x-1.x"
+
 
 ; COD feature modules.
 projects[cod_support][subdir] = contrib 
 projects[cod_support][download][type] = git
 projects[cod_support][download][url] = "http://git.drupal.org/project/cod_support.git"
-projects[cod_support][download][revision] = "6.x-1.x"
+projects[cod_support][download][branch] = "6.x-1.x"
 
 ; Libraries
 libraries[jquery_ui][download][type] = "get"
