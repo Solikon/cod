@@ -36,7 +36,7 @@ projects[emfield][subdir] = contrib
 projects[fasttoggle][subdir] = contrib
 
 projects[flag][subdir] = contrib
-projects[flag][version] = 2.0-beta5
+projects[flag][version] = 2.0-beta7
 
 ; git checkout of Features 6.x-1.x
 projects[features][subdir] = contrib
