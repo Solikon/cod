@@ -1,61 +1,127 @@
-; Conference Organizing Install Profile makefile
-; Automatically generated based on cod.make and http://drupal.org/node/162354/convert-make-file
-core = 6.19
+; Conference Organizing Distribution dev snapshot makefile
+; The purpose of this makefile is to make it easier for people to install
+; the dev version of COD and its dependencies, including patches, before
+; a new full release of the distribution is rolled.  
+
+api = 2
+core = 6.x
+
+; Required versions of Drupal contributed projects.
 projects[admin][subdir] = contrib
-projects[admin][version] = 2.0
+
 projects[cck][subdir] = contrib
-projects[cck][version] = 2.8
+
 projects[auto_nodetitle][subdir] = contrib
-projects[auto_nodetitle][version] = 1.2
-projects[emfield][subdir] = contrib
-projects[emfield][version] = 2.3
-projects[link][subdir] = contrib
-projects[link][version] = 2.9
-projects[checkbox_validate][subdir] = contrib
-projects[checkbox_validate][version] = 2.1
+
 projects[comment_notify][subdir] = contrib
-projects[comment_notify][version] = 1.5
+
 projects[context][subdir] = contrib
 projects[context][version] = 3.0
+
 projects[ctools][subdir] = contrib
 projects[ctools][version] = 1.8
-projects[strongarm][version] = 2.0
+
 projects[strongarm][subdir] = contrib
+
+projects[link][subdir] = contrib
+
 projects[date][subdir] = contrib
-projects[date][version] = 2.6
+
 projects[diff][subdir] = contrib
-projects[diff][version] = 2.1
+
+projects[checkbox_validate][subdir] = contrib
+
+projects[emfield][subdir] = contrib
+
+projects[fasttoggle][subdir] = contrib
+
 projects[flag][subdir] = contrib
-projects[flag][version] = 2.0-beta3
+projects[flag][version] = 2.0-beta5
+
+; git checkout of Features 6.x-1.x
 projects[features][subdir] = contrib
-projects[features][version] = 1.0
+projects[features][download][type] = "git"
+projects[features][download][branch] = "6.x-1.x"
+projects[features][download][url] = "http://git.drupal.org/project/features.git"
+; http://drupal.org/node/968826#comment-3863422
+projects[features][patch][] = "http://drupal.org/files/issues/968826-features-menu-uuid.patch"
+; http://drupal.org/node/912716#comment-3899924
+projects[features][patch][] ="http://drupal.org/files/issues/features-profile-fields-912716-11.patch"
+; http://drupal.org/node/860974#comment-3505484
+projects[features][patch][] = "http://drupal.org/files/issues/features.860974.patch"
+
+
 projects[filefield][subdir] = contrib
-projects[filefield][version] = 3.7
+
 projects[globalredirect][subdir] = contrib
-projects[globalredirect][version] = 1.3-alpha1
+
 projects[imagefield][subdir] = contrib
-projects[imagefield][version] = 3.7
+
 projects[imageapi][subdir] = contrib
-projects[imageapi][version] = 1.9
+
 projects[imagecache][subdir] = contrib
-projects[imagecache][version] = 2.0-beta10
+
 projects[jquery_ui][subdir] = contrib
-projects[jquery_ui][version] = 1.4
+
 projects[markdown][subdir] = contrib
-projects[markdown][version] = 1.2
+
+projects[nodeaccess_userreference][subdir] = contrib
+
 projects[pathauto][subdir] = contrib
-projects[pathauto][version] = 1.5
+
+projects[panels][subdir] = contrib
+
 projects[path_redirect][subdir] = contrib
-projects[path_redirect][version] = 1.0-rc1
+
+projects[skinr][subdir] = contrib
+
 projects[signup][subdir] = contrib
-projects[signup][version] = 1.0-rc6
+
+projects[signup_profile][subdir] = contrib
+
+projects[skinr][subdir = contrib
+
 projects[token][subdir] = contrib
-projects[token][version] = 1.15
+
 projects[uc_signup][subdir] = contrib
-projects[uc_signup][version] = 1.0-beta6
+
+projects[uc_node_checkout][subdir] = contrib
+
+projects[uuid][subdir] = contrib
+projects[uuid][download][type] = "git"
+projects[uuid][download][url] = "http://git.drupal.org/project/uuid.git"
+projects[uuid][download][revision] = "6.x-1.x"
+
+projects[uuid_features][subdir] = contrib
+projects[uuid_features][download][type] = "git"
+projects[uuid_features][download][url] = "http://git.drupal.org/project/uuid_features.git"
+projects[uuid_features][download][revision] = "6.x-1.x"
+
+
 projects[ubercart][subdir] = contrib
-projects[ubercart][version] = 2.4
+
 projects[views][subdir] = contrib
-projects[views][version] = 2.11
-projects[cod_support][subdir] = features
-projects[cod_support][version] = 1.0-alpha2
+
+projects[views_bulk_operations][subdir] = contrib
+
+projects[views_send][subdir] = contrib
+
+projects[fusion_swimmingly][type] = theme
+
+projects[fusion][type] = theme
+projects[fusion][download][type] = git
+projects[fusion][download][url] = "http://git.drupal.org/project/fusion.git"
+projects[fusion][download][revision] = "6.x-1.x"
+
+; COD feature modules.
+projects[cod_support][subdir] = contrib 
+projects[cod_support][download][type] = git
+projects[cod_support][download][url] = "http://git.drupal.org/project/cod_support.git"
+projects[cod_support][download][revision] = "6.x-1.x"
+
+; Libraries
+libraries[jquery_ui][download][type] = "get"
+libraries[jquery_ui][destination] = "modules/contrib/jquery_ui"
+libraries[jquery_ui][download][url] = "http://jquery-ui.googlecode.com/files/jquery.ui-1.6.zip"
+libraries[jquery_ui][directory_name] = "jquery.ui"
+
