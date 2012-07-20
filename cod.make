@@ -7,6 +7,12 @@ api = 2
 core = 6.x
 
 ; Required versions of Drupal contributed projects.
+projects[acquia_connector][subdir] = contrib
+
+projects[acquia_search][subdir] = "contrib"
+
+projects[apachesolr][subdir] = contrib
+
 projects[admin][subdir] = contrib
 
 projects[cck][subdir] = contrib
@@ -36,7 +42,7 @@ projects[emfield][subdir] = contrib
 projects[fasttoggle][subdir] = contrib
 
 projects[flag][subdir] = contrib
-projects[flag][version] = 2.0-beta5
+projects[flag][version] = 2.0-beta7
 
 ; git checkout of Features 6.x-1.x
 projects[features][subdir] = contrib
@@ -49,7 +55,6 @@ projects[features][patch][] = "http://drupal.org/files/issues/968826-features-me
 projects[features][patch][] ="http://drupal.org/files/issues/features-profile-fields-912716-11.patch"
 ; http://drupal.org/node/860974#comment-3505484
 projects[features][patch][] = "http://drupal.org/files/issues/features.860974.patch"
-
 
 projects[filefield][subdir] = contrib
 
@@ -96,7 +101,6 @@ projects[uuid_features][subdir] = contrib
 projects[uuid_features][download][type] = "git"
 projects[uuid_features][download][url] = "http://git.drupal.org/project/uuid_features.git"
 projects[uuid_features][download][revision] = "6.x-1.x"
-
 
 projects[ubercart][subdir] = contrib
 

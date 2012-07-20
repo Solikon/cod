@@ -157,11 +157,17 @@ function cod_profile_tasks(&$task, $url) {
     $task = 'cod-modules';
   }
 
-  // Install some more modules and maybe localization helpers too
+  // Install some more modules.
   if ($task == 'cod-modules') {
     $modules = _cod_profile_modules();
+    // If applicable, add Acquia connector modules to the
+    // list of modules to enable.
+    $enable_acquia_connector = variable_get('cod_enable_acquia_connector', 1);
+    if (!empty($enable_acquia_connector)) {
+      $modules = array_merge($modules, array('acquia_agent', 'acquia_spi'));
+    }
     $files = module_rebuild_cache();
-    // Create batch
+    // Create batch.
     foreach ($modules as $module) {
       $batch['operations'][] = array('_install_module_batch', array($module, $files[$module]->info['name']));
     }    
@@ -246,5 +252,29 @@ function cod_profile_final() {
 function system_form_install_select_profile_form_alter(&$form, $form_state) {
   foreach ($form['profile'] as $key => $element) {
     $form['profile'][$key]['#value'] = 'cod';
+  }
+}
+
+function system_form_install_configure_form_alter($form, $form_state) {
+  $form['acquia_connector'] = array(
+    '#type' => 'fieldset',
+    '#title' => st('Acquia Network'),
+      '#description' => st('The !an can supplement the functionality of COD with enhanced site search (faceted search, content recommendations, content biasing, multi-site search and other functionality via the Apache Solr service), spam protection (using the Mollom service), and more.  A free 30-day trial is available.', array('!an' => l(st('Acquia Network'), 'http://acquia.com/products-services/acquia-network', array('attributes' => array('target' => '_blank'))))),
+  );
+  $form['acquia_connector']['cod_enable_acquia_connector'] = array(
+    '#type' => 'checkbox',
+    '#title' => st('Acquia Network'),
+    '#default_value' => variable_get('cod_enable_acquia_connector', 1),
+    '#description' => st('Leave this checkbox enabled to use the Acquia Network with your existing subscription or with a free 30 day trial.'),
+  );
+  $form['#submit'][] = 'cod_install_configure_form_submit';
+
+}
+
+function cod_install_configure_form_submit($form, $form_state) {
+  // cod_enable_acquia_connector defaults to enabled, so we need to 
+  // specifically disable it the checkbox isn't specified.
+  if (empty($form_state['values']['cod_enable_acquia_connector'])) {
+    variable_set('cod_enable_acquia_connector', 0);
   }
 }

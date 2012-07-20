@@ -7,6 +7,12 @@ api = 2
 core = 6.x
 
 ; Required versions of Drupal contributed projects.
+projects[acquia_connector][subdir] = contrib
+
+projects[acquia_search][subdir] = "contrib"
+
+projects[apachesolr][subdir] = contrib
+
 projects[admin][subdir] = contrib
 
 projects[cck][subdir] = contrib
@@ -50,7 +56,6 @@ projects[features][patch][] ="http://drupal.org/files/issues/features-profile-fi
 ; http://drupal.org/node/860974#comment-3505484
 projects[features][patch][] = "http://drupal.org/files/issues/features.860974.patch"
 
-
 projects[filefield][subdir] = contrib
 
 projects[globalredirect][subdir] = contrib
@@ -92,12 +97,10 @@ projects[uuid][download][type] = "git"
 projects[uuid][download][url] = "http://git.drupal.org/project/uuid.git"
 projects[uuid][download][branch] = "6.x-1.x"
 
-
 projects[uuid_features][subdir] = contrib
 projects[uuid_features][download][type] = "git"
 projects[uuid_features][download][url] = "http://git.drupal.org/project/uuid_features.git"
 projects[uuid_features][download][branch] = "6.x-1.x"
-
 
 projects[ubercart][subdir] = contrib
 
@@ -113,7 +116,6 @@ projects[fusion_swimmingly][download][url] = "http://git.drupal.org/project/fusi
 projects[fusion_swimmingly][download][branch] = "6.x-1.x"
 
 projects[fusion][type] = theme
-
 
 ; COD feature modules.
 projects[cod_support][subdir] = contrib 
