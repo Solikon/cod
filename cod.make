@@ -51,8 +51,6 @@ projects[features][download][branch] = "6.x-1.x"
 projects[features][download][url] = "http://git.drupal.org/project/features.git"
 ; http://drupal.org/node/968826#comment-3863422
 projects[features][patch][] = "http://drupal.org/files/issues/968826-features-menu-uuid.patch"
-; http://drupal.org/node/912716#comment-3899924
-projects[features][patch][] ="http://drupal.org/files/issues/features-profile-fields-912716-11.patch"
 ; http://drupal.org/node/860974#comment-3505484
 projects[features][patch][] = "http://drupal.org/files/issues/features.860974.patch"
 
