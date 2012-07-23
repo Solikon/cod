@@ -111,17 +111,11 @@ projects[views_bulk_operations][subdir] = contrib
 projects[views_send][subdir] = contrib
 
 projects[fusion_swimmingly][type] = theme
-projects[fusion_swimmingly][download][type] = git
-projects[fusion_swimmingly][download][url] = "http://git.drupal.org/project/fusion_swimmingly.git"
-projects[fusion_swimmingly][download][branch] = "6.x-1.x"
 
 projects[fusion][type] = theme
 
 ; COD feature modules.
 projects[cod_support][subdir] = contrib 
-projects[cod_support][download][type] = git
-projects[cod_support][download][url] = "http://git.drupal.org/project/cod_support.git"
-projects[cod_support][download][branch] = "6.x-1.x"
 
 ; Libraries
 libraries[jquery_ui][download][type] = "get"
