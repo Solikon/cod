@@ -245,16 +245,28 @@ function cod_profile_final() {
 }
 
 /**
- * Implements hook_form_alter().
+ * Implements hook_form_FORM_ID_alter().
  * Set COD as the default profile.
- * (copied from Atrium: We use system_form_form_id_alter, otherwise we cannot alter forms.)
+ * (copied from Atrium: We are respectful of other profiles even if they aren't so nice.)
  */
-function system_form_install_select_profile_form_alter(&$form, $form_state) {
-  foreach ($form['profile'] as $key => $element) {
-    $form['profile'][$key]['#value'] = 'cod';
-  }
+if (!function_exists('system_form_install_select_profile_form_alter')) {
+  function system_form_install_select_profile_form_alter(&$form, $form_state) {
+    foreach ($form['profile'] as $key => $element) {
+      $form['profile'][$key]['#value'] = 'cod';
+    }
+   }
+ }
+else if (!function_exists('filter_form_install_select_profile_form_alter')) {
+  function filter_form_install_select_profile_form_alter(&$form, $form_state) {
+    foreach ($form['profile'] as $key => $element) {
+      $form['profile'][$key]['#value'] = 'cod';
+    }
+  }  
 }
 
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
 function system_form_install_configure_form_alter($form, $form_state) {
   $form['acquia_connector'] = array(
     '#type' => 'fieldset',
