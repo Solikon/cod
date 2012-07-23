@@ -212,7 +212,7 @@ function cod_profile_tasks(&$task, $url) {
       'cod_community' => array('variable'),
       'cod_events' => array('variable'),
       'cod_news' => array('variable'),
-      'cod_session' => array('variable'),
+      'cod_session' => array('variable', 'menu_links'),
       'cod_sponsors' => array('variable'),
       'cod_base' => array('variable', 'user_permission'),
     );
