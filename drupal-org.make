@@ -10,6 +10,7 @@ core = 6.x
 projects[acquia_connector][subdir] = contrib
 
 projects[acquia_search][subdir] = "contrib"
+projects[acquia_search][version] = "1.5700"
 
 projects[apachesolr][subdir] = contrib
 
@@ -25,7 +26,6 @@ projects[context][subdir] = contrib
 projects[context][version] = 3.0
 
 projects[ctools][subdir] = contrib
-projects[ctools][version] = 1.8
 
 projects[strongarm][subdir] = contrib
 
@@ -42,7 +42,6 @@ projects[emfield][subdir] = contrib
 projects[fasttoggle][subdir] = contrib
 
 projects[flag][subdir] = contrib
-projects[flag][version] = 2.0-beta7
 
 ; git checkout of Features 6.x-1.x
 projects[features][subdir] = contrib
