@@ -1,7 +1,7 @@
 ; Conference Organizing Distribution dev snapshot makefile
 ; The purpose of this makefile is to make it easier for people to install
 ; the dev version of COD and its dependencies, including patches, before
-; a new full release of the distribution is rolled.  
+; a new full release of the distribution is rolled.
 
 api = 2
 core = 6.x
@@ -23,7 +23,7 @@ projects[auto_nodetitle][subdir] = contrib
 projects[comment_notify][subdir] = contrib
 
 projects[context][subdir] = contrib
-projects[context][version] = 3.0
+projects[context][version] = 3.3
 
 projects[ctools][subdir] = contrib
 
@@ -112,7 +112,7 @@ projects[fusion_swimmingly][type] = theme
 projects[fusion][type] = theme
 
 ; COD feature modules.
-projects[cod_support][subdir] = contrib 
+projects[cod_support][subdir] = contrib
 
 ; Libraries
 libraries[jquery_ui][download][type] = "get"
