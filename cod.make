@@ -22,7 +22,7 @@ projects[auto_nodetitle][subdir] = contrib
 projects[comment_notify][subdir] = contrib
 
 projects[context][subdir] = contrib
-projects[context][version] = 3.0
+projects[context][version] = 3.3
 
 projects[ctools][subdir] = contrib
 projects[ctools][version] = 1.11
