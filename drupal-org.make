@@ -10,7 +10,7 @@ core = 6.x
 projects[acquia_connector][subdir] = contrib
 
 projects[acquia_search][subdir] = "contrib"
-projects[acquia_search][version] = "1.5702"
+projects[acquia_search][version] = "1.5704"
 
 projects[apachesolr][subdir] = contrib
 
