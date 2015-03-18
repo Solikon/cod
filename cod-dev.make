@@ -5,7 +5,7 @@
 api = 2
 core = 6.x
 
-projects[drupal] = 6.34
+projects[drupal] = 6.35
 
 projects[cod][type] = profile
 projects[cod][download][type] = "git"
