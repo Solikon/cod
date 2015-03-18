@@ -25,7 +25,7 @@ projects[context][subdir] = contrib
 projects[context][version] = 3.3
 
 projects[ctools][subdir] = contrib
-projects[ctools][version] = 1.11
+projects[ctools][version] = 1.12
 
 projects[strongarm][subdir] = contrib
 
@@ -103,6 +103,7 @@ projects[uuid_features][download][revision] = "6.x-1.x"
 projects[ubercart][subdir] = contrib
 
 projects[views][subdir] = contrib
+projects[views][version] = 2.18
 
 projects[views_bulk_operations][subdir] = contrib
 
