@@ -130,7 +130,7 @@ projects[view_own][subdir] = contrib
 
 ; patches
 ; https://www.drupal.org/node/320313#comment-1083675
-projects[cck][patch][] = "https://www.drupal.org/files/issues/patch_274.txt"
+projects[cck][patch][] = "https://www.drupal.org/files/issues/cck-minimum-widgets-320313-84.patch"
 
 ; Themes
 projects[fusion_swimmingly][type] = theme
