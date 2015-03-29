@@ -129,11 +129,22 @@ projects[view_own]
 
 
 projects[fusion_swimmingly][type] = theme
+projects[fusion_swimmingly][subdir] = ""
 
 projects[fusion][type] = theme
+projects[fusion][subdir] = ""
 
 projects[tao][type] = theme
+projects[tao][subdir] = ""
 projects[rubik][type] = theme
+projects[rubik][subdir] = ""
+
+projects[fusion_solikon][type] = "theme"
+projects[fusion_solikon][download][type] = "git"
+projects[fusion_solikon][download][url] = "https://github.com/heliogabal/fusion_solikon.git"
+projects[fusion_solikon][options][working-copy] = TRUE
+projects[fusion_solikon][subdir] = ""
+
 
 ; COD feature modules.
 projects[cod_support]
