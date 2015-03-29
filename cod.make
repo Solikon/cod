@@ -109,10 +109,39 @@ projects[views_bulk_operations][subdir] = contrib
 
 projects[views_send][subdir] = contrib
 
+; Module für solikon2015.org
+projects[admin_menu][subdir] = contrib
+projects[admin_theme][subdir] = contrib
+projects[captcha][subdir] = contrib
+projects[formblock][subdir] = contrib
+projects[jammer][subdir] = contrib
+projects[l10n_update][subdir] = contrib
+projects[logintoboggan][subdir] = contrib
+projects[module_filter][subdir] = contrib
+projects[more_node_buttons][subdir] = contrib
+projects[nodeaccess][subdir] = contrib
+projects[node_clone][subdir] = contrib
+projects[smtp][subdir] = contrib
+projects[special_menu_items][subdir] = contrib
+projects[translation_helpers][subdir] = contrib
+projects[transliteration][subdir] = contrib
+projects[view_own][subdir] = contrib
+
+; Themes
 projects[fusion_swimmingly][type] = theme
 
 projects[fusion][type] = theme
 
+projects[tao][type] = theme
+projects[tao][subdir] = ""
+projects[rubik][type] = theme
+projects[rubik][subdir] = ""
+
+projects[fusion_solikon][type] = "theme"
+projects[fusion_solikon][download][type] = "git"
+projects[fusion_solikon][download][url] = "https://github.com/heliogabal/fusion_solikon.git"
+projects[fusion_solikon][options][working-copy] = TRUE
+projects[fusion_solikon][subdir] = ""
 
 ; COD feature modules.
 projects[cod_support][subdir] = contrib
@@ -123,3 +152,5 @@ libraries[jquery_ui][destination] = "modules/contrib/jquery_ui"
 libraries[jquery_ui][download][url] = "http://jquery-ui.googlecode.com/files/jquery.ui-1.6.zip"
 libraries[jquery_ui][directory_name] = "jquery.ui"
 
+; +++++ Translations +++++
+translations[] = de
