@@ -10,5 +10,5 @@ projects[pressflow][download][url] = "http://files.aegir.cc/core/pressflow-6.35.
 
 projects[cod][type] = profile
 projects[cod][download][type] = "git"
-projects[cod][download][url] = "https://github.com/heliogabal/cod.git"
+projects[cod][download][url] = "https://github.com/Solikon/cod.git"
 ;projects[cod][download][revision] = "6.x-1.5"

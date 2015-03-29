@@ -147,7 +147,7 @@ projects[rubik][subdir] = ""
 
 projects[fusion_solikon][type] = "theme"
 projects[fusion_solikon][download][type] = "git"
-projects[fusion_solikon][download][url] = "https://github.com/heliogabal/fusion_solikon.git"
+projects[fusion_solikon][download][url] = "https://github.com/Solikon/fusion_solikon.git"
 projects[fusion_solikon][options][working-copy] = TRUE
 projects[fusion_solikon][subdir] = ""
 
