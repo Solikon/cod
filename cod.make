@@ -117,7 +117,7 @@ projects[view_own][version] = 1.1
 
 ; patches
 ; https://www.drupal.org/node/320313#comment-1083675
-projects[cck][patch][] = "https://www.drupal.org/files/issues/cck-minimum-widgets-320313-84.patch"
+projects[cck][patch][] = "https://www.drupal.org/files/issues/content.node_form.inc__1.patch"
 ; Panels http://cgit.drupalcode.org/panels/commit/?h=6.x-3.x&id=d3f1f07440e89fe2366de691fd0c96c264ea5752
 projects[panels][patch][] = "http://cgit.drupalcode.org/panels/patch/?id=d3f1f07440e89fe2366de691fd0c96c264ea5752"
 ; Panels IPE Tao https://www.drupal.org/node/1240994
