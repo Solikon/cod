@@ -132,6 +132,9 @@ projects[fusion_swimmingly][type] = theme
 
 projects[fusion][type] = theme
 
+projects[tao][type] = theme
+projects[rubik][type] = theme
+
 ; COD feature modules.
 projects[cod_support]
 
