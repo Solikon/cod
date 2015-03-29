@@ -23,8 +23,11 @@ function cod_profile_modules() {
     'profile',
     // Contrib:
     'checkbox_validate',
-    'admin',
+    'admin_menu',
+    'module_filter',
+    'fpa',
     'pathauto',
+    'transliteration',
     'globalredirect',
     'path_redirect',
     'comment_notify',
@@ -170,7 +173,7 @@ function cod_profile_tasks(&$task, $url) {
     // Create batch.
     foreach ($modules as $module) {
       $batch['operations'][] = array('_install_module_batch', array($module, $files[$module]->info['name']));
-    }    
+    }
     $batch['finished'] = '_cod_profile_batch_finished'; // The finish op will set the next task.
     $batch['title'] = st('Installing @drupal', array('@drupal' => drupal_install_profile_name()));
     $batch['error_message'] = st('The installation has encountered an error.');
@@ -200,10 +203,12 @@ function cod_profile_tasks(&$task, $url) {
     drupal_flush_all_caches();
     // Set acquia_prosper as the default theme.
     db_query("UPDATE {system} SET status = 1 WHERE type = 'theme' and name ='%s'", 'fusion_core');
-    db_query("UPDATE {system} SET status = 1 WHERE type = 'theme' and name ='%s'", 'fusion_swimmingly');
-    variable_set('theme_default', 'fusion_swimmingly');
+    db_query("UPDATE {system} SET status = 1 WHERE type = 'theme' and name ='%s'", 'fusion_solikon');
+    db_query("UPDATE {system} SET status = 1 WHERE type = 'theme' and name ='%s'", 'tao');
+    db_query("UPDATE {system} SET status = 1 WHERE type = 'theme' and name ='%s'", 'bartik');
+    variable_set('theme_default', 'fusion_solikon');
     // Set the default admin theme to bluemarine b/c it is good.
-    variable_set('admin_theme', 'bluemarine');
+    variable_set('admin_theme', 'bartik');
     // Revert features to be sure everything is setup correctly.
     // We revert cod_base last because it assigns permissions to roles defined
     // in the other COD Feature modules. See http://drupal.org/node/1210246
@@ -241,7 +246,7 @@ function _cod_profile_batch_finished($success, $results) {
 *   screen.
 */
 function cod_profile_final() {
-  
+
 }
 
 /**
@@ -261,7 +266,7 @@ else if (!function_exists('filter_form_install_select_profile_form_alter')) {
     foreach ($form['profile'] as $key => $element) {
       $form['profile'][$key]['#value'] = 'cod';
     }
-  }  
+  }
 }
 
 /**
@@ -284,7 +289,7 @@ function system_form_install_configure_form_alter($form, $form_state) {
 }
 
 function cod_install_configure_form_submit($form, $form_state) {
-  // cod_enable_acquia_connector defaults to enabled, so we need to 
+  // cod_enable_acquia_connector defaults to enabled, so we need to
   // specifically disable it the checkbox isn't specified.
   if (empty($form_state['values']['cod_enable_acquia_connector'])) {
     variable_set('cod_enable_acquia_connector', 0);
