@@ -6,45 +6,47 @@
 api = 2
 core = 6.x
 
-; Required versions of Drupal contributed projects.
-projects[acquia_connector][subdir] = contrib
+; Specify default subdirectory for projects
+defaults[projects][subdir] = "sites/all/modules/contrib"
 
-projects[acquia_search][subdir] = "contrib"
+; Required versions of Drupal contributed projects.
+projects[acquia_connector]
+
 projects[acquia_search][version] = "1.5704"
 
-projects[apachesolr][subdir] = contrib
+projects[apachesolr]
 
-projects[admin][subdir] = contrib
+projects[admin]
 
-projects[cck][subdir] = contrib
+projects[cck]
 
-projects[auto_nodetitle][subdir] = contrib
+projects[auto_nodetitle]
 
-projects[comment_notify][subdir] = contrib
+projects[comment_notify]
 
-projects[context][subdir] = contrib
+projects[context]
 projects[context][version] = 3.3
 
-projects[ctools][subdir] = contrib
+projects[ctools]
 
-projects[strongarm][subdir] = contrib
+projects[strongarm]
 
-projects[link][subdir] = contrib
+projects[link]
 
-projects[date][subdir] = contrib
+projects[date]
 
-projects[diff][subdir] = contrib
+projects[diff]
 
-projects[checkbox_validate][subdir] = contrib
+projects[checkbox_validate]
 
-projects[emfield][subdir] = contrib
+projects[emfield]
 
-projects[fasttoggle][subdir] = contrib
+projects[fasttoggle]
 
-projects[flag][subdir] = contrib
+projects[flag]
 
 ; git checkout of Features 6.x-1.x
-projects[features][subdir] = contrib
+projects[features]
 projects[features][download][type] = "git"
 projects[features][download][branch] = "6.x-1.x"
 projects[features][download][url] = "http://git.drupal.org/project/features.git"
@@ -53,74 +55,77 @@ projects[features][patch][] = "http://drupal.org/files/issues/968826-features-me
 ; http://drupal.org/node/860974#comment-3505484
 projects[features][patch][] = "http://drupal.org/files/issues/features.860974.patch"
 
-projects[filefield][subdir] = contrib
+projects[filefield]
 
-projects[globalredirect][subdir] = contrib
+projects[globalredirect]
 
-projects[imagefield][subdir] = contrib
+projects[imagefield]
 
-projects[imageapi][subdir] = contrib
+projects[imageapi]
 
-projects[imagecache][subdir] = contrib
+projects[imagecache]
 
-projects[jquery_ui][subdir] = contrib
+projects[jquery_ui]
 
-projects[markdown][subdir] = contrib
+projects[markdown]
 
-projects[nodeaccess_userreference][subdir] = contrib
+projects[nodeaccess_userreference]
 
-projects[pathauto][subdir] = contrib
+projects[pathauto]
 
-projects[panels][subdir] = contrib
+projects[panels]
 
-projects[path_redirect][subdir] = contrib
+projects[path_redirect]
 
-projects[skinr][subdir] = contrib
+projects[skinr]
 
-projects[signup][subdir] = contrib
+projects[signup]
 
-projects[signup_profile][subdir] = contrib
+projects[signup_profile]
 
 projects[skinr][subdir = contrib
 
-projects[token][subdir] = contrib
+projects[token]
 
-projects[uc_signup][subdir] = contrib
+projects[uc_signup]
 
-projects[uc_node_checkout][subdir] = contrib
+projects[uc_node_checkout]
 
-projects[uuid][subdir] = contrib
+projects[uuid]
 projects[uuid][download][type] = "git"
 projects[uuid][download][url] = "http://git.drupal.org/project/uuid.git"
 projects[uuid][download][branch] = "6.x-1.x"
 
-projects[uuid_features][subdir] = contrib
+projects[uuid_features]
 projects[uuid_features][download][type] = "git"
 projects[uuid_features][download][url] = "http://git.drupal.org/project/uuid_features.git"
 projects[uuid_features][download][branch] = "6.x-1.x"
 
-projects[ubercart][subdir] = contrib
+projects[ubercart]
 
-projects[views][subdir] = contrib
+projects[views]
 
-projects[views_bulk_operations][subdir] = contrib
+projects[views_bulk_operations]
 
-projects[views_send][subdir] = contrib
+projects[views_send]
 
 ; Module für solikon2015.org
-projects[admin_menu][subdir] = contrib
-projects[captcha][subdir] = contrib
-projects[formblock][subdir] = contrib
-projects[jammer][subdir] = contrib
-projects[l10n_update][subdir] = contrib
-projects[logintoboggan][subdir] = contrib
-projects[more_node_buttons][subdir] = contrib
-projects[nodeaccess][subdir] = contrib
-projects[node_clone][subdir] = contrib
-projects[smtp][subdir] = contrib
-projects[special_menu_items][subdir] = contrib
-projects[translation_helpers][subdir] = contrib
-projects[view_own][subdir] = contrib
+projects[admin_menu]
+projects[admin_theme]
+projects[captcha]
+projects[formblock]
+projects[jammer]
+projects[l10n_update]
+projects[logintoboggan]
+projects[module_filter]
+projects[more_node_buttons]
+projects[nodeaccess]
+projects[node_clone]
+projects[smtp]
+projects[special_menu_items]
+projects[translation_helpers]
+projects[transliteration]
+projects[view_own]
 
 
 projects[fusion_swimmingly][type] = theme
@@ -128,7 +133,7 @@ projects[fusion_swimmingly][type] = theme
 projects[fusion][type] = theme
 
 ; COD feature modules.
-projects[cod_support][subdir] = contrib
+projects[cod_support]
 
 ; Libraries
 libraries[jquery_ui][download][type] = "get"
