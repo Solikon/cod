@@ -107,6 +107,22 @@ projects[views_bulk_operations][subdir] = contrib
 
 projects[views_send][subdir] = contrib
 
+; Module für solikon2015.org
+projects[admin_menu][subdir] = contrib
+projects[captcha][subdir] = contrib
+projects[formblock][subdir] = contrib
+projects[jammer][subdir] = contrib
+projects[l10n_update][subdir] = contrib
+projects[logintoboggan][subdir] = contrib
+projects[more_node_buttons][subdir] = contrib
+projects[nodeaccess][subdir] = contrib
+projects[node_clone][subdir] = contrib
+projects[smtp][subdir] = contrib
+projects[special_menu_items][subdir] = contrib
+projects[translation_helpers][subdir] = contrib
+projects[view_own][subdir] = contrib
+
+
 projects[fusion_swimmingly][type] = theme
 
 projects[fusion][type] = theme
