@@ -114,6 +114,7 @@ projects[admin_menu][subdir] = contrib
 projects[admin_theme][subdir] = contrib
 projects[captcha][subdir] = contrib
 projects[formblock][subdir] = contrib
+projects[fpa][subdir] = contrib
 projects[jammer][subdir] = contrib
 projects[l10n_update][subdir] = contrib
 projects[logintoboggan][subdir] = contrib
